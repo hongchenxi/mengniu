@@ -1,0 +1,254 @@
+{
+  "id": "1010691",
+  "name": "wechat",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "809976",
+      "name": "back",
+      "font_class": "back",
+      "unicode": "e660",
+      "unicode_decimal": 58976
+    },
+    {
+      "icon_id": "927755",
+      "name": "ico-right-arrow",
+      "font_class": "ico-right-arrow",
+      "unicode": "e66c",
+      "unicode_decimal": 58988
+    },
+    {
+      "icon_id": "949584",
+      "name": "aui-icon-location",
+      "font_class": "aui-icon-location",
+      "unicode": "e618",
+      "unicode_decimal": 58904
+    },
+    {
+      "icon_id": "2207679",
+      "name": "icon-location",
+      "font_class": "location",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "11762552",
+      "name": "edit",
+      "font_class": "edit",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "56352",
+      "name": "windows",
+      "font_class": "windows8",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "1109121",
+      "name": "windows",
+      "font_class": "windows9",
+      "unicode": "ee2f",
+      "unicode_decimal": 60975
+    },
+    {
+      "icon_id": "1567694",
+      "name": "windows",
+      "font_class": "windows10",
+      "unicode": "e6bc",
+      "unicode_decimal": 59068
+    },
+    {
+      "icon_id": "3587118",
+      "name": "windows",
+      "font_class": "windows11",
+      "unicode": "e601",
+      "unicode_decimal": 58881
+    },
+    {
+      "icon_id": "6699791",
+      "name": "windows",
+      "font_class": "windows13",
+      "unicode": "e647",
+      "unicode_decimal": 58951
+    },
+    {
+      "icon_id": "7113383",
+      "name": "windows",
+      "font_class": "windows14",
+      "unicode": "ea33",
+      "unicode_decimal": 59955
+    },
+    {
+      "icon_id": "108428",
+      "name": "windows",
+      "font_class": "windows1",
+      "unicode": "e801",
+      "unicode_decimal": 59393
+    },
+    {
+      "icon_id": "262805",
+      "name": "windows",
+      "font_class": "windows2",
+      "unicode": "e6df",
+      "unicode_decimal": 59103
+    },
+    {
+      "icon_id": "929976",
+      "name": "windows",
+      "font_class": "windows3",
+      "unicode": "e898",
+      "unicode_decimal": 59544
+    },
+    {
+      "icon_id": "3542753",
+      "name": "windows",
+      "font_class": "windows4",
+      "unicode": "e98b",
+      "unicode_decimal": 59787
+    },
+    {
+      "icon_id": "3931785",
+      "name": "windows",
+      "font_class": "windows5",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "4130419",
+      "name": "windows",
+      "font_class": "windows6",
+      "unicode": "e7b3",
+      "unicode_decimal": 59315
+    },
+    {
+      "icon_id": "5555333",
+      "name": "windows",
+      "font_class": "windows7",
+      "unicode": "e787",
+      "unicode_decimal": 59271
+    },
+    {
+      "icon_id": "2443424",
+      "name": "微信 图标-02",
+      "font_class": "weixintubiao-",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "2443435",
+      "name": "微信 图标-07",
+      "font_class": "weixintubiao-1",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "190829",
+      "name": "发起群聊",
+      "font_class": "faqiqunliao1",
+      "unicode": "e69e",
+      "unicode_decimal": 59038
+    },
+    {
+      "icon_id": "73027",
+      "name": "windows",
+      "font_class": "windows",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "646167",
+      "name": "我",
+      "font_class": "wo2",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "1715092",
+      "name": "发现",
+      "font_class": "faxian",
+      "unicode": "e602",
+      "unicode_decimal": 58882
+    },
+    {
+      "icon_id": "1948068",
+      "name": "我",
+      "font_class": "wo",
+      "unicode": "e616",
+      "unicode_decimal": 58902
+    },
+    {
+      "icon_id": "2901872",
+      "name": "Mac",
+      "font_class": "Mac",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "3363839",
+      "name": "帮助与反馈问号",
+      "font_class": "bangzhuyufankuiwenhao",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "4056832",
+      "name": "通讯录",
+      "font_class": "tongxunlu",
+      "unicode": "e656",
+      "unicode_decimal": 58966
+    },
+    {
+      "icon_id": "4216050",
+      "name": "收付款",
+      "font_class": "shoufukuan1",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "4847708",
+      "name": "免打扰",
+      "font_class": "miandarao",
+      "unicode": "e755",
+      "unicode_decimal": 59221
+    },
+    {
+      "icon_id": "5094457",
+      "name": "发现",
+      "font_class": "ziyuan",
+      "unicode": "e671",
+      "unicode_decimal": 58993
+    },
+    {
+      "icon_id": "2799656",
+      "name": "收付款",
+      "font_class": "shoufukuan",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "3184520",
+      "name": "添加朋友",
+      "font_class": "icon",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "7157517",
+      "name": "扫一扫",
+      "font_class": "icon-scan",
+      "unicode": "e634",
+      "unicode_decimal": 58932
+    },
+    {
+      "icon_id": "548067",
+      "name": "add",
+      "font_class": "add",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    }
+  ]
+}
