@@ -25,6 +25,16 @@ export default {
     top 0
     width 100%
     height 45px
+    .navigator_back
+      position absolute
+      left 10px
+      top 50%
+      transform translateY(-50%)
+      width 10%
+      height 50%
+      .icon-back
+        font-size 25px
+        color #ffffff
     .navigator_title
       position absolute
       top 50%

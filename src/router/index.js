@@ -6,6 +6,8 @@ const Story = () => import('../pages/Story/Story.vue')
 const Activity = () => import('../pages/Activity/Activity.vue')
 const Mine = () => import('../pages/Mine/Mine.vue')
 
+import Nearshop from '../pages/Nearshop/Nearshop.vue'
+
 Vue.use(VueRouter)
 
 export default new VueRouter({
@@ -41,6 +43,10 @@ export default new VueRouter({
     {
       path: '/',
       redirect: '/home'
+    },
+    {
+      path: '/nearshop',
+      component: Nearshop
     }
   ]
 })

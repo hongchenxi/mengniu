@@ -1,0 +1,32 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "result": [
+    {
+      "viptype": 1,
+      "linkid": 906,
+      "title": "banner",
+      "subtitle": "",
+      "pagepath": "",
+      "externalappid": "",
+      "skipurl": "",
+      "targetpagetype": 0,
+      "pageid": 0,
+      "pageparam": "",
+      "imageurl": "http://game.img.ismartgo.cn/test/200219/5a14f839-f41f-4841-86de-52140b6a2b8b.png"
+    },
+    {
+      "viptype": 1,
+      "linkid": 913,
+      "title": "banner",
+      "subtitle": "",
+      "pagepath": "",
+      "externalappid": "",
+      "skipurl": "",
+      "targetpagetype": 0,
+      "pageid": 0,
+      "pageparam": "",
+      "imageurl": "http://game.img.ismartgo.cn/test/200224/86563535-b1f8-4dd9-8381-f5a2c853a72e.jpg"
+    }
+  ]
+}

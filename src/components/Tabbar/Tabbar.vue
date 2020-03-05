@@ -48,6 +48,7 @@ export default {
   width 100%
   height 50px
   display flex
+  background #ffffff
   .tabbar_item
     display flex
     flex 1

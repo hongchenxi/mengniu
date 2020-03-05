@@ -1,5 +1,5 @@
 <template>
-  <div class="location">
+  <div class="location" @click="$router.push('nearshop')">
     <div class="current_shop ellipsis">
       <span class="location_icon">
         <i class="iconfont icon-aui-icon-location"></i>
