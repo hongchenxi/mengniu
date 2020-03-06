@@ -61,6 +61,7 @@ export default {
       this.$nextTick(() => {
         new Swiper('.swiper-container', {
           loop: true,
+          autoplay: true,
           pagination: {
             el: '.swiper-pagination'
           }
@@ -105,5 +106,5 @@ export default {
               width 100%
         .swiper-pagination
           >span.swiper-pagination-bullet-active
-            background yellow    
+            background #ffffff    
 </style>

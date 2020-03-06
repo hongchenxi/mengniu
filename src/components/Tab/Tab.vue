@@ -54,7 +54,6 @@ export default {
 
   methods: {
     changeTab: function(index) {
-      console.log('this: ', index)
       this.$emit("changeTab", index)
     }
   }
