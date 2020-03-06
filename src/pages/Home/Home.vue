@@ -18,6 +18,7 @@
           <div class="swiper-pagination"></div>
         </div>
       </div>
+      <Tab :tabIndex = "tabIndex" @changeTab="changeTab"/>
     </div>
     
   </section>
@@ -26,17 +27,29 @@
 <script>
 import Location from '../../components/Location/Location.vue'
 import Navigator from '../../components/Navigator/Navigator.vue'
+import Tab from '../../components/Tab/Tab.vue'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
 
 import {mapState, mapActions} from 'vuex'
 export default {
+  
+  data() {
+    return {
+      tabIndex: 0
+    }
+  },
+
   mounted () {
     this.getBanners()
   },
 
   methods: {
-    ...mapActions(['getBanners'])
+    ...mapActions(['getBanners']),
+    changeTab: function(id) {
+      console.log('id:----', id)
+      this.tabIndex = id
+    }
   },
 
   computed: {
@@ -58,7 +71,8 @@ export default {
 
   components: {
     Navigator,
-    Location
+    Location,
+    Tab
   }
 }
 </script>
@@ -92,5 +106,4 @@ export default {
         .swiper-pagination
           >span.swiper-pagination-bullet-active
             background yellow    
-
 </style>
