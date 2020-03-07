@@ -1,16 +1,14 @@
 <template>
   <div class="coupon_container" ref="wrapper">
-    <!-- <ul class="coupon_list" v-if="coupons.length"> -->
-      <ul class="coupon_list" >
-        <li class="coupon_li" v-for="(coupon, index) in 10" :key="index">
+      <ul class="coupon_list" v-if="nearcoupons.length">
+        <li class="coupon_li" v-for="(coupon, index) in nearcoupons" :key="index">
           <a>
             <div class="left">
-              <img src="">
+              <img :src="coupon.logourl">
             </div>
             <div class="middle ellipsis">
-              <span class="title ellipsis">蒙牛特仑苏，嗨miuk纯
-  牛奶-0脂肪</span>
-              <span class="subtitle ellipsis">满100减30元</span>
+              <span class="title ellipsis">{{coupon.title}}</span>
+              <span class="subtitle ellipsis">{{coupon.subtitle}}}</span>
             </div>
             <div class="right">
               <button>立即领取</button>
@@ -22,6 +20,7 @@
 </template>
 
 <script>
+import {mapState, mapActions} from 'vuex'
 export default {
  props: {
    id: Number
@@ -29,10 +28,18 @@ export default {
  data () {
    return {}
  },
- mounted () {
-  
- }
 
+ mounted () {
+   this.getNearCoupons()
+ },
+
+ computed: {
+   ...mapState(['nearcoupons'])
+ },
+
+ methods: {
+   ...mapActions(['getNearCoupons'])
+ },
 }
 </script>
 

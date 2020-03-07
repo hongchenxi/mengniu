@@ -2,25 +2,29 @@
   <div class="tabbar">
     <span class="tabbar_item" :class="{on: '/home' == $route.path}" @click="switchTab('/home')">
       <span class="item_icon">
-        <img src="./images/home.png">
+        <img v-if="$route.path === '/home'" src="./images/home_selected.png">
+        <img v-else src="./images/home.png">
       </span>
       <span>优惠券</span>
     </span>
     <a href="javascript:;" class="tabbar_item" :class="{on: '/story' == $route.path}" @click="switchTab('/story')">
       <span class="item_icon">
-        <img src=./images/story.png >
+        <img v-if="$route.path === '/story'" src="./images/story_selected.png">
+        <img v-else src=./images/story.png >
       </span>
       <span>品牌故事</span>
     </a>
     <a href="javascript:;" class="tabbar_item" :class="{on: '/activity' == $route.path}" @click="switchTab('/activity')">
       <span class="item_icon">
-        <img src="./images/activity.png" >
+        <img v-if="$route.path === '/activity'" src="./images/activity_selected.png">
+        <img v-else src="./images/activity.png" >
       </span>
       <span>品牌活动</span>
     </a>
     <a href="javascript:;" class="tabbar_item" :class="{on: '/mine' == $route.path}" @click="switchTab('/mine')">
       <span class="item_icon">
-        <img src="./images/mine.png" >
+        <img v-if="$route.path === '/mine'" src="./images/mine_selected.png">
+        <img v-else src="./images/mine.png" >
       </span>
       <span>我的</span>
     </a>

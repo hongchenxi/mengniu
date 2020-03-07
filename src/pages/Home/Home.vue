@@ -75,7 +75,6 @@ export default {
 
       if (!this.scroll) {
         this.scroll = new BScroll('.home_content_wrapper', {})
-        console.log(this.scroll)
       }
 
       

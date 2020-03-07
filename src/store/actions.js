@@ -1,20 +1,27 @@
 import {
-  RECEIVE_BANNERS
+  RECEIVE_BANNERS,
+  RECEIVE_NEARCOUPONS
 } from './mutation-typs'
 
 import {
-  reqBanners
+  reqBanners,
+  reqNearCoupons
 } from '../api/index'
 
 export default {
   async getBanners ({commit}) {
     const result = await reqBanners()
-    console.log('result === ', result)
-    if (result.errcode == 0) {
+    if (result.errcode === 0) {
       const banners = result.result
-
-      console.log('banners ==== ',banners)
       commit(RECEIVE_BANNERS, {banners})
+    }
+  },
+
+  async getNearCoupons ({commit}) {
+    const result = await reqNearCoupons()
+    if (result.errcode === 0) {
+      const nearcoupons = result.result
+      commit(RECEIVE_NEARCOUPONS, {nearcoupons})
     }
   }
 }
