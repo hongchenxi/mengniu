@@ -3,22 +3,25 @@
     <Navigator title="蒙牛礼享+"/>
    
     <div class="home_content_wrapper">
-      <Location class="location"/>
-      <div class="home_banner">
-        <div class="swiper-container" v-if="banners.length">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide"  v-for="(banner, index) in banners" :key="index">
-              <a href="javascript:;" class="link_to">
-                <div class="img_container">
-                  <img :src="banner.imageurl" >
-                </div>
-              </a>
+      <div class="home_content">
+        <Location class="location"/>
+        <div class="home_banner">
+          <div class="swiper-container" v-if="banners.length">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"  v-for="(banner, index) in banners" :key="index">
+                <a href="javascript:;" class="link_to">
+                  <div class="img_container">
+                    <img :src="banner.imageurl" >
+                  </div>
+                </a>
+              </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
-          <div class="swiper-pagination"></div>
         </div>
+        <Tab :tabIndex = "tabIndex" @changeTab="changeTab"/>
+        <Couponlist :id="id"/>
       </div>
-      <Tab :tabIndex = "tabIndex" @changeTab="changeTab"/>
     </div>
     
   </section>
@@ -28,15 +31,18 @@
 import Location from '../../components/Location/Location.vue'
 import Navigator from '../../components/Navigator/Navigator.vue'
 import Tab from '../../components/Tab/Tab.vue'
+import Couponlist from '../../components/Couponlist/Couponlist.vue'
 import Swiper from 'swiper'
 import 'swiper/css/swiper.min.css'
+import BScroll from 'better-scroll'
 
 import {mapState, mapActions} from 'vuex'
 export default {
   
   data() {
     return {
-      tabIndex: 0
+      tabIndex: 0,
+      id: 0
     }
   },
 
@@ -47,7 +53,6 @@ export default {
   methods: {
     ...mapActions(['getBanners']),
     changeTab: function(id) {
-      console.log('id:----', id)
       this.tabIndex = id
     }
   },
@@ -67,13 +72,23 @@ export default {
           }
         })
       })
+
+      if (!this.scroll) {
+        this.scroll = new BScroll('.home_content_wrapper', {})
+        console.log(this.scroll)
+      }
+
+      
     }
+
+    
   },
 
   components: {
     Navigator,
     Location,
-    Tab
+    Tab,
+    Couponlist
   }
 }
 </script>
@@ -85,7 +100,6 @@ export default {
    .home_content_wrapper
     position fixed
     top 45px
-    left 0
     bottom 46px
     width 100%
     .home_banner
