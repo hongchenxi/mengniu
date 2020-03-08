@@ -2,5 +2,7 @@ export default {
   banners: [],
   nearcoupons: [],
   shops: [],
-  address: {}
+  address: {},
+  storys: [],
+  activitys: []
 }

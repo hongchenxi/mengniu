@@ -1,0 +1,21 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "result": [
+    {
+      "articleid": 1178,
+      "pageid": 1178,
+      "title": "蒙牛纯甄，酸奶领券立减活动",
+      "publishdate": "2020-02-19",
+      "imageurl": "http://game.img.ismartgo.cn/test/200219/2b1eb1f6-313f-4fee-b272-dc7217a363a1.png",
+      "extenralappid": "",
+      "showcountdown": 0,
+      "countbegintime": null,
+      "countendtime": null,
+      "countdesc": null,
+      "countextdesc": null,
+      "countextdesc1": null,
+      "pagepath": "/pages/combinepage/page?pageid=1178"
+    }
+  ]
+}

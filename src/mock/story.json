@@ -1,0 +1,58 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "result": [
+    {
+      "viptype": 1,
+      "linkid": 907,
+      "title": "立即浏览",
+      "subtitle": "",
+      "pagepath": "/pages/combinepage/page?pageid=1181",
+      "externalappid": "",
+      "skipurl": "https://game.img.ismartgo.cn/test/200227/c3dee9a9-c4dc-47fc-8653-8679d745eb03.html",
+      "targetpagetype": 0,
+      "pageid": 1181,
+      "pageparam": "",
+      "imageurl": "http://game.img.ismartgo.cn/test/200228/6088f7b8-d7c9-4d5c-ac1b-46a0492bcb1b.jpg"
+    },
+    {
+      "viptype": 1,
+      "linkid": 909,
+      "title": "立即浏览",
+      "subtitle": "",
+      "pagepath": "/pages/combinepage/page?pageid=1182",
+      "externalappid": "",
+      "skipurl": "https://game.img.ismartgo.cn/test/200227/006a3060-243a-4f89-be1f-8780844610b7.html",
+      "targetpagetype": 0,
+      "pageid": 1182,
+      "pageparam": "",
+      "imageurl": "http://game.img.ismartgo.cn/test/200228/11523835-d5d4-4f3b-bfa1-c7b0ca9f9ecd.png"
+    },
+    {
+      "viptype": 1,
+      "linkid": 910,
+      "title": "立即浏览",
+      "subtitle": "",
+      "pagepath": "/pages/combinepage/page?pageid=1183",
+      "externalappid": "",
+      "skipurl": "https://game.img.ismartgo.cn/test/200227/ecaf67f2-8013-4c79-994b-9e4b487a2519.html",
+      "targetpagetype": 0,
+      "pageid": 1183,
+      "pageparam": "",
+      "imageurl": "http://game.img.ismartgo.cn/test/200227/666f5cec-a192-4e16-bf14-f323a3935f2d.jpg"
+    },
+    {
+      "viptype": 1,
+      "linkid": 911,
+      "title": "立即浏览",
+      "subtitle": "",
+      "pagepath": "/pages/combinepage/page?pageid=1184",
+      "externalappid": "",
+      "skipurl": "https://game.img.ismartgo.cn/test/200227/71661b27-d935-40a9-8a5a-fc6989698185.html",
+      "targetpagetype": 0,
+      "pageid": 1184,
+      "pageparam": "",
+      "imageurl": "http://game.img.ismartgo.cn/test/200228/551352da-d9d4-41ab-b920-867894ad2a32.jpg"
+    }
+  ]
+}
