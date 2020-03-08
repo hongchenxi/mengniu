@@ -4,7 +4,8 @@ import {
     RECEIVE_SHOPS,
     RECEIVE_ADDRESS,
     RECEIVE_STORYS,
-    RECEIVE_ACTIVITYS
+    RECEIVE_ACTIVITYS,
+    RECEIVE_TAGS
 } from './mutation-typs'
 
 export default {
@@ -30,6 +31,10 @@ export default {
 
     [RECEIVE_ACTIVITYS](state, {activitys}) {
         state.activitys = activitys
+    },
+
+    [RECEIVE_TAGS](state, {tags}) {
+        state.tags = tags
     }
 }
 

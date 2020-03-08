@@ -45,6 +45,7 @@ export default {
 
 <style lang="stylus">
   .coupon_container
+    width 100%
     position relative
     bottom 0
     overflow hidden

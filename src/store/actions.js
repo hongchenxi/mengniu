@@ -4,7 +4,8 @@ import {
     RECEIVE_SHOPS,
     RECEIVE_ADDRESS,
     RECEIVE_STORYS,
-    RECEIVE_ACTIVITYS
+    RECEIVE_ACTIVITYS,
+    RECEIVE_TAGS
 } from './mutation-typs'
 
 import {
@@ -13,7 +14,8 @@ import {
     reqValidShops,
     reqAddress,
     reqStorys,
-    reqActivitys
+    reqActivitys,
+    reqTags
 } from '../api/index'
 
 export default {
@@ -62,6 +64,14 @@ export default {
         if (result.errcode === 0) {
             const activitys = result.result
             commit(RECEIVE_ACTIVITYS, {activitys})
+        }
+    },
+
+    async getTags({commit}) {
+        const result = await reqTags()
+        if (result.errcode === 0) {
+            const tags = result.result
+            commit(RECEIVE_TAGS, {tags})
         }
     }
 

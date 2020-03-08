@@ -19,7 +19,7 @@
             <div class="swiper-pagination"></div>
           </div>
         </div>
-        <Tab :tabIndex = "tabIndex" @changeTab="changeTab"/>
+        <Tab :tabIndex = "tabIndex" :tags="tags" @changeTab="changeTab"/>
         <Couponlist :id="id"/>
       </div>
     </div>
@@ -48,17 +48,18 @@ export default {
 
   mounted () {
     this.getBanners()
+    this.getTags()
   },
 
   methods: {
-    ...mapActions(['getBanners']),
+    ...mapActions(['getBanners', 'getTags']),
     changeTab: function(id) {
       this.tabIndex = id
     }
   },
 
   computed: {
-    ...mapState(['banners'])
+    ...mapState(['banners', 'tags'])
   },
 
   watch: {
