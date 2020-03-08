@@ -1,11 +1,13 @@
 import {
   RECEIVE_BANNERS,
-  RECEIVE_NEARCOUPONS
+  RECEIVE_NEARCOUPONS,
+  RECEIVE_SHOPS
 } from './mutation-typs'
 
 import {
   reqBanners,
-  reqNearCoupons
+  reqNearCoupons,
+  reqValidShops
 } from '../api/index'
 
 export default {
@@ -22,6 +24,14 @@ export default {
     if (result.errcode === 0) {
       const nearcoupons = result.result
       commit(RECEIVE_NEARCOUPONS, {nearcoupons})
+    }
+  },
+
+  async getValidShops({commit}) {
+    const result = await reqValidShops()
+    if (result.errcode === 0) {
+      const shops = result.result
+      commit(RECEIVE_SHOPS, {shops})
     }
   }
 }

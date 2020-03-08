@@ -15,7 +15,7 @@
         <div class="shop_cell">
           <div class="shop_name">
             <span class="location">
-              <i class="iconfont"></i>
+              <i class="iconfont icon-location"></i>
             </span>
             广州市沃尔玛珠影广场店
           </div>
@@ -26,17 +26,14 @@
         </div>
       </div>
       <div>
-        <section class="section_title">附近可选门店（285家）</section>
-        <div class="shop_cell extra" v-for="(item, index) in 20" :key="index">
+        <section class="section_title">附近可选门店（{{shops.length}}家）</section>
+        <div class="shop_cell extra" v-for="(shop, index) in shops" :key="index">
           <div class="shop_name">
-            <span class="location">
-              <i class="iconfont"></i>
-            </span>
-            广州市沃尔玛珠影广场店
+            {{shop.name}}
           </div>
           <div class="location_info">
-            <span class="location_info_address">武汉市黄陂区腾龙大厦奥特莱斯之星城市广场10号1楼</span>
-            <span class="location_info_distance">270m</span>
+            <span class="location_info_address">{{shop.address}}</span>
+            <span class="location_info_distance">{{shop.distance}}</span>
           </div>
         </div>
       </div>
@@ -45,8 +42,21 @@
 </template>
 
 <script>
+import {mapState, mapActions} from 'vuex'
 import Navigator from "../../components/Navigator/Navigator.vue";
 export default {
+  mounted () {
+    this.getValidShops()
+  },
+
+  computed: {
+    ...mapState(['shops'])
+  },
+
+  methods: {
+    ...mapActions(['getValidShops'])
+  },
+
   components: {
     Navigator
   }
@@ -126,7 +136,15 @@ export default {
       font-size: 14px;
       color: #000000;
       line-height: 21px;
+      .location {
+        width 18px
+        height 18px
+        .icon-location {
+          font-size 16px
+        }
+      }
     }
+    
 
     .location_info {
       color: #999999;

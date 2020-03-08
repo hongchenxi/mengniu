@@ -1,7 +1,8 @@
 
 import {
   RECEIVE_BANNERS,
-  RECEIVE_NEARCOUPONS
+  RECEIVE_NEARCOUPONS,
+  RECEIVE_SHOPS
 } from './mutation-typs'
 
 export default {
@@ -11,6 +12,10 @@ export default {
   
   [RECEIVE_NEARCOUPONS] (state, {nearcoupons}) {
     state.nearcoupons = nearcoupons
+  },
+
+  [RECEIVE_SHOPS] (state, {shops}) {
+    state.shops = shops
   }
 
 }
