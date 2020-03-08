@@ -5,7 +5,7 @@
         <i class="iconfont icon-aui-icon-location"></i>
       </span>
       <span class="current_shop_title">当前门店：</span>
-      广州市珠影广场沃尔玛店
+     {{address.shopinfo.name}}
     </div>
     <div class="more_shop">
       更多门店
@@ -17,7 +17,20 @@
 </template>
 
 <script>
-export default {};
+import {mapState, mapActions} from 'vuex'
+export default {
+  mounted () {
+    this.getAddress()
+  },
+
+  computed: {
+    ...mapState(['address'])
+  },
+
+  methods: {
+    ...mapActions(['getAddress'])
+  }
+};
 </script>
 
 <style lang="stylus" scoped>

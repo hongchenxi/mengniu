@@ -17,11 +17,11 @@
             <span class="location">
               <i class="iconfont icon-location"></i>
             </span>
-            广州市沃尔玛珠影广场店
+           {{address.shopinfo.name}}
           </div>
           <div class="location_info">
-            <span class="location_info_address">武汉市黄陂区腾龙大厦奥特莱斯之星城市广场10号1楼</span>
-            <span class="location_info_distance">270m</span>
+            <span class="location_info_address">{{address.shopinfo.address}}</span>
+            <span class="location_info_distance">{{address.shopinfo.distance}}</span>
           </div>
         </div>
       </div>
@@ -50,7 +50,7 @@ export default {
   },
 
   computed: {
-    ...mapState(['shops'])
+    ...mapState(['shops', 'address'])
   },
 
   methods: {

@@ -1,5 +1,6 @@
 export default {
   banners: [],
   nearcoupons: [],
-  shops: []
+  shops: [],
+  address: {}
 }

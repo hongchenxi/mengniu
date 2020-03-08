@@ -2,7 +2,8 @@
 import {
   RECEIVE_BANNERS,
   RECEIVE_NEARCOUPONS,
-  RECEIVE_SHOPS
+  RECEIVE_SHOPS,
+  RECEIVE_ADDRESS
 } from './mutation-typs'
 
 export default {
@@ -16,6 +17,10 @@ export default {
 
   [RECEIVE_SHOPS] (state, {shops}) {
     state.shops = shops
+  },
+
+  [RECEIVE_ADDRESS] (state, {address}) {
+    state.address = address
   }
 
 }

@@ -1,0 +1,24 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "result": {
+    "adcode": "440106",
+    "address": "OK便利店（骏景南苑分店）",
+    "cityid": 76,
+    "lat": 23.1338816853572,
+    "lon": 113.39554693926874,
+    "shopid": 10958834,
+    "shopinfo": {
+      "id": 10958834,
+      "name": "OK便利店（骏景南苑分店）",
+      "address": "广州市天河区中山大道骏景南苑骏御轩D座101-B铺",
+      "distance": "714m",
+      "retail": "OK便利店",
+      "retailid": 10005527,
+      "logourl": "",
+      "lat": 23.13,
+      "lon": 113.39,
+      "shopcode": "A0001597"
+    }
+  }
+}
