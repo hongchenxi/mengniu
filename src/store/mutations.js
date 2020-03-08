@@ -5,7 +5,8 @@ import {
     RECEIVE_ADDRESS,
     RECEIVE_STORYS,
     RECEIVE_ACTIVITYS,
-    RECEIVE_TAGS
+    RECEIVE_TAGS,
+    RECEIVE_MYCOUPONS
 } from './mutation-typs'
 
 export default {
@@ -35,6 +36,10 @@ export default {
 
     [RECEIVE_TAGS](state, {tags}) {
         state.tags = tags
+    },
+
+    [RECEIVE_MYCOUPONS](state, {mycoupons}) {
+        state.mycoupons = mycoupons
     }
 }
 

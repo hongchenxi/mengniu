@@ -5,7 +5,8 @@ import {
     RECEIVE_ADDRESS,
     RECEIVE_STORYS,
     RECEIVE_ACTIVITYS,
-    RECEIVE_TAGS
+    RECEIVE_TAGS,
+    RECEIVE_MYCOUPONS
 } from './mutation-typs'
 
 import {
@@ -15,7 +16,8 @@ import {
     reqAddress,
     reqStorys,
     reqActivitys,
-    reqTags
+    reqTags,
+    reqMycoupons
 } from '../api/index'
 
 export default {
@@ -73,6 +75,14 @@ export default {
             const tags = result.result
             commit(RECEIVE_TAGS, {tags})
         }
-    }
+    },
 
+    async getMycoupons({commit}) {
+        const result = await reqMycoupons()
+        if (result.errcode === 0) {
+            const mycoupons = result.result
+            console.log(mycoupons)
+            commit(RECEIVE_MYCOUPONS, {mycoupons})
+        }
+    }
 }

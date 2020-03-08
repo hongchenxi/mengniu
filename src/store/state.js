@@ -5,5 +5,6 @@ export default {
   address: {},
   storys: [],
   activitys: [],
-  tags: []
+  tags: [],
+  mycoupons: []
 }

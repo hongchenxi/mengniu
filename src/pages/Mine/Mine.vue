@@ -5,6 +5,7 @@
       <UserInfo/>
     </div>
     <Tab :tabIndex = "tabIndex" :tags="tags" @changeTab="changeTab"/>
+    <Couponlist :type="1"/>
   </section>
 </template>
 
@@ -12,6 +13,7 @@
 import Navigator from '../../components/Navigator/Navigator.vue'
 import UserInfo from "../../components/UserInfo/UserInfo"
 import Tab from "../../components/Tab/Tab"
+import Couponlist from "../../components/Couponlist/Couponlist"
 export default {
   data() {
     return {
@@ -32,7 +34,8 @@ export default {
   components: {
     Navigator,
     UserInfo,
-    Tab
+    Tab,
+    Couponlist
   }
 }
 </script>

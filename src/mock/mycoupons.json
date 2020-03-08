@@ -1,0 +1,36 @@
+{
+  "errcode": 0,
+  "errmsg": "",
+  "result": [
+    {
+      "batchid": 98502,
+      "batchcode": "9916720",
+      "title": "纯甄轻酪乳单瓶",
+      "subtitle": "满0.1元减0.01元",
+      "category": 1,
+      "logourl": "https://wx.gtimg.com/mmpay_pub/mR0cjANmmywwMrPf0qDOW7dEqkJ3VbgzM8KhTaQ1pEREb3FwUlKLmTHEpsoVGdqU/0",
+      "coverurl": "https://wx.gtimg.com/mmpay_pub/mR0cjANmmyx1l1VXic14ZMEncM70UEzqW2bpcwcrKotqoN3UfdiclONbXCNdq2WB4c/0",
+      "producturl": "https://wx.gtimg.com/mmpay_pub/mR0cjANmmywwMrPf0qDOW7dEqkJ3VbgzM8KhTaQ1pEREb3FwUlKLmTHEpsoVGdqU/0",
+      "begindate": "2020-03-02",
+      "enddate": "2020-03-09",
+      "tagid": 0,
+      "publishbegindate": "",
+      "publishenddate": "",
+      "expectbegindate": "",
+      "isget": 1,
+      "status": 2,
+      "nearbyshop": "OK便利店（骏景南苑分店）",
+      "distance": "714m",
+      "nearbyshopid": 10958834,
+      "sendqty": 14,
+      "totalqty": 120,
+      "gameid": 0,
+      "skipurl": "",
+      "userestriction": null,
+      "tmplids": null,
+      "sortnum": 0,
+      "pagepath": "",
+      "externalappid": ""
+    }
+  ]
+}
