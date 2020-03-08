@@ -1,6 +1,6 @@
 <template>
   <div class="location" @click="$router.push('nearshop')">
-    <div class="current_shop ellipsis">
+    <div class="current_shop ellipsis"  v-if="JSON.stringify(address) !== '{}'">
       <span class="location_icon">
         <i class="iconfont icon-aui-icon-location"></i>
       </span>
